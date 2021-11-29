@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ntf3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AccountFragment">
+
+    <TextView
+        android:layout_marginTop="16sp"
+        android:id="@+id/textView_3_1"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/source_sans_pro"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:text="Full Name"
+
+        android:textColor="@color/underline"
+        android:textSize="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ></TextView>
+
+    <TextView
+        android:text="Loading..."
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingLeft="12dp"
+        android:gravity="fill_vertical"
+        android:fontFamily="@font/source_sans_pro"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        android:id="@+id/textview_3_2"
+        android:background="@drawable/account_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_3_1"></TextView>
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/textView_3_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:layout_marginLeft="12dp"
+        android:text="Mobile"
+
+        android:textColor="@color/underline"
+        android:textSize="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_3_2"></TextView>
+
+    <TextView
+        android:text="Loading..."
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingLeft="12dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:gravity="fill_vertical"
+        android:layout_marginTop="8dp"
+
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginRight="16dp"
+        android:background="@drawable/account_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_3_3"></TextView>
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+
+        android:id="@+id/textView_3_5"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/source_sans_pro"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:text="Adhar"
+
+        android:textColor="@color/underline"
+        android:textSize="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"></TextView>
+
+    <TextView
+        android:text="Loading..."
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingLeft="12dp"
+        android:gravity="fill_vertical"
+        android:fontFamily="@font/source_sans_pro"
+
+        android:layout_marginTop="8dp"
+
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginRight="16dp"
+        android:background="@drawable/account_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_3_5"></TextView>
+
+    <TextView
+        android:layout_marginTop="8dp"
+
+        android:id="@+id/textView_3_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:layout_marginLeft="12dp"
+        android:text="Proof"
+
+        android:textColor="@color/underline"
+        android:textSize="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_3_6">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/newblue"></View>
+        <View
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/newblue"></View>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/newblue"></View>
+        <View
+            android:layout_gravity="end"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/newblue"></View>
+
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/image_view"
+            android:src="@drawable/image_acc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ImageView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

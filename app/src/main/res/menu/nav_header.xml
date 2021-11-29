@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/mchange_pwd"
+
+        android:title="Change password"
+        android:icon="@drawable/change_pwd"></item>
+
+
+
+    <item
+        android:id="@+id/mlogout"
+        android:title="Logout"
+        android:icon="@drawable/logout"></item>
+
+
+</menu>

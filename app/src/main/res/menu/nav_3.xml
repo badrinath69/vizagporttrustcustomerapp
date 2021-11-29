@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+
+        android:title="COMPLAINTS"
+        android:id="@+id/ic_complaint"
+        android:icon="@drawable/ticket_white"
+
+
+        ></item>
+
+    <item
+        android:title="NOTIFICATONS"
+        android:icon="@drawable/notifications_white"
+        android:id="@+id/ic_notificatons"
+        ></item>
+    <item
+        android:title="ACCOUNT"
+        android:icon="@drawable/account_white"
+        android:id="@+id/ic_account"
+        ></item>
+</menu>

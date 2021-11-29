@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Selltez" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/newblue</item>
+        <item name="colorPrimaryVariant">@color/proj</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="WhiteDrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textSize">12dp</item>
+
+    </style>
+
+
+    <style name="AccentButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal" > @color/underline </item>
+        <item name="android:textColor"> @color/white</item>
+
+        <item name="colorAccent"> @color/newblue</item>
+    </style>
+
+    <style name="new_style" parent="Widget.AppCompat.Button">
+        <item name="background">@color/new1</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme">AppTheme</style>
+</resources>

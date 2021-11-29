@@ -1,0 +1,140 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ForgotPwdActivity">
+
+    <ImageButton
+        android:visibility="invisible"
+        android:clickable="true"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:id="@+id/bt_back_33"
+        android:src="@drawable/back_bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView_5_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Verify OTP"
+
+        android:textColor="@color/underline"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_back_33"></TextView>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/textView_5_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+
+        android:text="Enter the OTP sent to your mobile number"
+
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_5_9"></TextView>
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:id="@+id/textView_5_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:gravity="center"
+        android:text="Verification Code"
+
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_5_8"></TextView>
+
+
+
+
+
+    <com.mukesh.OtpView
+        android:id="@+id/textInputLayout_5_6"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemCount="4"
+        android:cursorVisible="true"
+        app:viewType="line"
+        app:hideLineWhenFilled="true"
+        android:inputType="number"
+        android:hint="----"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/textView_5_7"
+        app:lineColor="@color/design_default_color_primary_dark"
+        ></com.mukesh.OtpView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verifyfbt"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="33dp"
+        android:background="@color/purple_700"
+
+        android:text="Verify"
+        android:textColor="@color/white"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_5_6"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/resendtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="33dp"
+
+        android:text="Resend OTP"
+
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="16sp"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifyfbt"></TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+

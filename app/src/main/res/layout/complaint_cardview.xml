@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="16dp"
+
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+
+
+                android:layout_width="6dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:background="@color/newblue"></View>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:text="Complaint Against : "
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:id="@+id/againstid"
+                        android:layout_marginRight="12dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro"
+
+                        android:text="CONFIRMED"
+                        android:gravity="end"
+                        android:textColor="@color/greennew"
+                        android:textStyle="bold"></TextView>
+
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/issueid"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top"
+
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="24dp"
+                    android:ellipsize="end"
+
+                    android:fontFamily="@font/source_sans_pro"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="Loading..."
+                    android:textColor="@color/black"
+                    android:textSize="20dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:weightSum="3"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/issueid">
+
+                        <LinearLayout
+
+
+                            android:layout_marginLeft="4dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:weightSum="2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+
+                                android:fontFamily="@font/source_sans_pro"
+
+                                android:drawableRight="@drawable/dateandtime"
+                                android:text="RAISED ON"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></TextView>
+
+                            <TextView
+                                android:textSize="12dp"
+                                android:id="@+id/raiseDate"
+                                android:layout_weight="1"
+                                android:text="Loading..."
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:weightSum="2"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:drawableEnd="@drawable/prof2"
+                                android:layout_marginRight="16sp"
+                                android:fontFamily="@font/source_sans_pro"
+
+                                android:text="PROOF SUBMISSION"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></TextView>
+
+                            <TextView
+                                android:drawableEnd="@drawable/tick"
+                                android:layout_marginRight="16sp"
+                                android:fontFamily="@font/source_sans_pro"
+
+                                android:layout_weight="1"
+                                android:text="DONE"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

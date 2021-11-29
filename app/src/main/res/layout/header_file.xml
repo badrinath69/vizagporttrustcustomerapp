@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newblue"
+
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginStart="8dp"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/nav_pic"
+
+
+
+        android:src="@drawable/vizagport_logo"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="8dp"
+
+            android:id="@+id/nav_name"
+            android:fontFamily="@font/source_sans_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textSize="20dp"
+            android:text="Harika"
+            android:textColor="@color/white"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:id="@+id/nav_number"
+
+            android:fontFamily="@font/source_sans_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:text="hello123@gmail.com"></TextView>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/underline"></View>
+
+
+</LinearLayout>

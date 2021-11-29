@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:weightSum="4"
+            android:background="@drawable/toolbar_name"
+            android:orientation="horizontal"
+            android:layout_width="240dp"
+            android:layout_height="32dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/home_yellow"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="20dp"></ImageView>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:layout_weight="3.5"
+                android:layout_width="0dp"
+                android:layout_height="24dp">
+                <TextView
+                    android:layout_weight="1.5"
+                    android:text="VISAKHAPATNAM PORT TRUST"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:layout_gravity="bottom"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+
+                    android:layout_weight="1.5"
+                    android:text="@string/sub_heading"
+                    android:textColor="@color/white"
+                    android:textSize="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="false"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/home_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+
+
+            app:navigationIcon="@drawable/tick"
+            app:title="VPT VIGILANCE"
+            app:subtitleTextAppearance="@style/AppTheme"
+            android:textAlignment="viewStart"
+            android:scrollbarFadeDuration="@integer/material_motion_duration_medium_2"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/newblue"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+
+
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_frame">
+
+
+    </FrameLayout>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+
+
+
+
+        app:itemRippleColor="@color/newblue"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_edit"
+        app:itemIconTint="@color/newblue"
+        app:itemTextColor="@color/newblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:labelVisibilityMode="labeled"
+
+
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/nav_3"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_one"
+
+
+
+        app:headerLayout="@layout/header_file"
+        app:menu="@menu/nav_header"
+
+        android:layout_gravity="start"
+
+        android:fitsSystemWindows="true"
+        ></com.google.android.material.navigation.NavigationView>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
